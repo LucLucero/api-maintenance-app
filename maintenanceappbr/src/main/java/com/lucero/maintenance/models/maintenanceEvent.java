@@ -8,8 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.context.annotation.ComponentScan;
-
 @Entity
 @Table(name ="Table_Events")
 public class maintenanceEvent implements Serializable {
@@ -30,9 +28,8 @@ public class maintenanceEvent implements Serializable {
 	
 	private String equipamento;
 	
-	private String problema;
+	private String descricao;	
 	
-	private String acao;
 
 	public long getId() {
 		return id;
@@ -82,31 +79,18 @@ public class maintenanceEvent implements Serializable {
 		this.equipamento = equipamento;
 	}
 
-	public String getProblema() {
-		return problema;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setProblema(String problema) {
-		this.problema = problema;
+	public void setD(String descricao) {
+		this.descricao = descricao;
 	}
 
-	public String getAcao() {
-		return acao;
-	}
-
-	public void setAcao(String acao) {
-		this.acao = acao;
-	}
-
+	
 	public static long getSerialversionuid() {
 		return serialversionUID;
 	}
 	
 	
-	
-	
-	
-	
-	
-
 }

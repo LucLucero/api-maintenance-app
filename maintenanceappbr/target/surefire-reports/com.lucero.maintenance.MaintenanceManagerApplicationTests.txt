@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.lucero.maintenance.MaintenanceManagerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1 s <<< FAILURE! - in com.lucero.maintenance.MaintenanceManagerApplicationTests
+contextLoads  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93]
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/boot/model/naming/PhysicalNamingStrategy
+Caused by: java.lang.ClassNotFoundException: org.hibernate.boot.model.naming.PhysicalNamingStrategy
+

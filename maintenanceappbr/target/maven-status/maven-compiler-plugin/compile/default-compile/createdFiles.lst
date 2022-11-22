@@ -1,0 +1,4 @@
+com\lucero\maintenance\models\maintenanceEvent.class
+com\lucero\maintenance\MaintenanceManagerApplication.class
+com\lucero\maintenance\resource\maintenanceEventResource.class
+com\lucero\maintenance\repository\EventRepository.class
